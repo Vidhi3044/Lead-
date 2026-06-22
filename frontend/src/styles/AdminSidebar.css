@@ -1,0 +1,82 @@
+.admin-sidebar {
+  width: 260px;
+  min-width: 260px;
+  min-height: 100vh;
+  background: var(--sidebar-bg);
+  color: var(--text-color);
+  padding: 36px 24px;
+  box-sizing: border-box;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.sidebar-logo {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 55px;
+  white-space: nowrap;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sidebar-link {
+  color: var(--muted-text);
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 14px 16px;
+  border-radius: 14px;
+  transition: 0.25s ease;
+}
+
+.sidebar-link:hover {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.active-link {
+  background: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.mobile-menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1001;
+  }
+
+  .admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
+
+  .admin-sidebar.open {
+    transform: translateX(0);
+  }
+}

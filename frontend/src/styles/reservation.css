@@ -1,0 +1,157 @@
+.reservation-hero {
+  text-align: center;
+  padding: 100px 10% 60px;
+  background-color: #f8f4ec;
+}
+
+.reservation-hero h1 {
+  font-size: 3rem;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+.reservation-hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.reservation-container {
+  display: flex;
+  gap: 50px;
+  padding: 60px 10%;
+  align-items: flex-start;
+}
+
+.reservation-form {
+  flex: 2;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.reservation-form h2 {
+  margin-bottom: 30px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-grid input,
+.form-grid select,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  margin-top: 20px;
+  resize: none;
+}
+
+.reservation-form button {
+  margin-top: 25px;
+  background-color: #d4af37;
+  color: #1c1c1c;
+  padding: 14px 30px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.reservation-form button:hover {
+  transform: translateY(-2px);
+}
+
+.reservation-info {
+  flex: 1;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.reservation-info h2 {
+  color: #d4af37;
+  margin-bottom: 25px;
+}
+
+.reservation-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reservation-info li {
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .reservation-container {
+    flex-direction: column;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.reservation-hero {
+  text-align: center;
+  padding: 120px 20px 70px;
+  background: #f8f4ec;
+}
+
+.reservation-hero-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.reservation-hero h1 {
+  font-size: 3rem;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+.reservation-hero p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+.reservation-info {
+  background: linear-gradient(
+    135deg,
+    #111111,
+    #1a1a1a
+  );
+
+  color: white;
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  height: fit-content;
+}
+
+.reservation-info h2 {
+  color: #d4af37;
+  margin-bottom: 30px;
+}
+
+.reservation-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reservation-info li {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}

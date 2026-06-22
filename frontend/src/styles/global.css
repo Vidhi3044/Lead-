@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.public-app {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f4ec;
+  color: #1e1e1e;
+  min-height: 100vh;
+}
+
+.admin-layout,
+.admin-layout-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 5%;
+  }
+}
+body[data-theme="light"] {
+  --bg-color: #f4f5f1;
+  --card-color: #ffffff;
+  --text-color: #111111;
+  --sidebar-bg: #ffffff;
+  --sidebar-text: #111111;
+  --accent-color: #d9f26a;
+}
+
+body[data-theme="dark"] {
+  --bg-color: #0d0d0d;
+  --card-color: #181818;
+  --text-color: #ffffff;
+  --sidebar-bg: #111111;
+  --sidebar-text: #ffffff;
+  --accent-color: #d9f26a;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.admin-sidebar {
+  background: var(--sidebar-bg) !important;
+  color: var(--sidebar-text) !important;
+}
+
+.sidebar-link {
+  color: var(--sidebar-text) !important;
+}
+
+.leads-page,
+.admin-dashboard,
+.lead-details-page {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.details-card,
+.dashboard-card,
+.leads-table {
+  background: var(--card-color) !important;
+  color: var(--text-color) !important;
+}
+
+.theme-toggle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: var(--card-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+.theme-toggle svg {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 20px;
+}
+body[data-theme="dark"] .excel-template-btn {
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  background: transparent !important;
+}
+body[data-theme="light"] {
+  --admin-bg: #eeeeec;
+  --sidebar-bg: #f7f7f5;
+  --card-bg: #ffffff;
+  --text-color: #111111;
+  --muted-text: #6f6f6f;
+  --border-color: #e4e4e4;
+  --accent-color: #d4af37;
+}
+
+body[data-theme="dark"] {
+  --admin-bg: #0f0f0f;
+  --sidebar-bg: #151515;
+  --card-bg: #1c1c1c;
+  --text-color: #ffffff;
+  --muted-text: #b5b5b5;
+  --border-color: #2a2a2a;
+  --accent-color: #d4af37;
+}
+
+body {
+  background: var(--admin-bg);
+}

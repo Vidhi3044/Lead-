@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://lead-1qo5.onrender.com/api/:path*"
+    },
+
+    {
+      "source": "/((?!api).*)" ,
+      "destination": "/index.html"
+    }
+  ]
+}
