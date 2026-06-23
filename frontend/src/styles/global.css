@@ -101,21 +101,33 @@ body {
 }
 
 .theme-toggle {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+
   border: none;
-  background: var(--card-color);
-  color: var(--text-color);
+  border-radius: 50%;
+
+  background: var(--card-bg);
   cursor: pointer;
-  font-size: 1.2rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
 }
+
 .theme-toggle svg {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin: 0;
   padding: 0;
-  display: block;
-  font-size: 20px;
 }
 body[data-theme="dark"] .excel-template-btn {
   color: #ffffff !important;
@@ -144,4 +156,25 @@ body[data-theme="dark"] {
 
 body {
   background: var(--admin-bg);
+}
+body[data-theme="light"] .theme-toggle {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border: 1px solid #dcdcdc !important;
+}
+
+body[data-theme="light"] .theme-toggle svg {
+  color: #111111 !important;
+  stroke: #111111 !important;
+}
+
+body[data-theme="dark"] .theme-toggle {
+  background: #1f1f1f !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+body[data-theme="dark"] .theme-toggle svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
 }
