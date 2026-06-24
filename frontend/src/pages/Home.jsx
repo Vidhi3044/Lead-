@@ -8,9 +8,9 @@ import Footer from "../components/ Footer";
 function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </>
   );

@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import AboutPage from "./pages/AboutPage";
-import SpacesPage from "./pages/SpacesPage";
+// import AboutPage from "./pages/AboutPage";
+// import SpacesPage from "./pages/SpacesPage";
 import ReservationPage from "./pages/ReservationPage";
 
 import AdminDashboard from "./pages/AdminDashboard";
@@ -22,8 +22,8 @@ function App() {
       <Routes>
         {/* Customer Portal Routes */}
         <Route path="/" element={<PublicLayout><Home /></PublicLayout>} />
-        <Route path="/about" element={<PublicLayout><AboutPage /></PublicLayout>} />
-        <Route path="/spaces" element={<PublicLayout><SpacesPage /></PublicLayout>} />
+        {/* <Route path="/about" element={<PublicLayout><AboutPage /></PublicLayout>} /> */}
+        {/* <Route path="/spaces" element={<PublicLayout><SpacesPage /></PublicLayout>} /> */}
         <Route path="/reservation" element={<PublicLayout><ReservationPage /></PublicLayout>} />
 
         {/* Admin Portal Routes */}

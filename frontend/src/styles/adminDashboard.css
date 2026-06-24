@@ -116,3 +116,15 @@
   cursor: pointer;
   font-weight: 600;
 }
+.dashboard-card {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(47, 79, 111, 0.15);
+}

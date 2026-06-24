@@ -5,12 +5,12 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>Luxury Dining & Hall Reservations</h1>
+        <h1>Bizwoke Nova</h1>
 
-        <p>
+        {/* <p>
           Reserve elegant dining spaces and premium halls
           for unforgettable experiences.
-        </p>
+        </p> */}
 
         <Link to="/reservation">
           <button>

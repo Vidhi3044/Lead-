@@ -7,9 +7,9 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">
+      {/* <div className="logo">
         <Link to="/">The Royal Ember</Link>
-      </div>
+      </div> */}
 
       <button className="nav-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
         {mobileMenuOpen ? "✕" : "☰"}
@@ -20,13 +20,13 @@ function Navbar() {
           <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
         </li>
 
-        <li>
+        {/* <li>
           <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
         </li>
 
         <li>
           <Link to="/spaces" onClick={() => setMobileMenuOpen(false)}>Spaces</Link>
-        </li>
+        </li> */}
 
         <li>
           <Link to="/reservation" onClick={() => setMobileMenuOpen(false)}>Reservation</Link>
@@ -36,4 +36,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar;

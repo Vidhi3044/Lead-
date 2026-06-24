@@ -104,7 +104,7 @@ const handleSubmit = async (e) => {
     <>
       <Navbar />
 
-      <section className="reservation-hero">
+      {/* <section className="reservation-hero">
         <div className="reservation-hero-content">
           <h1>Reserve Your Experience</h1>
 
@@ -114,7 +114,7 @@ const handleSubmit = async (e) => {
             experience.
           </p>
         </div>
-      </section>
+      </section> */}
 
       <section className="reservation-container">
         <div className="reservation-form">
@@ -268,7 +268,7 @@ const handleSubmit = async (e) => {
           </form>
         </div>
 
-        <div className="reservation-info">
+        {/* <div className="reservation-info">
           <h2>Reservation Information</h2>
 
           <ul>
@@ -278,7 +278,7 @@ const handleSubmit = async (e) => {
             <li>✓ Our team may contact you for additional details</li>
             <li>✓ Dedicated support for special occasions and events</li>
           </ul>
-        </div>
+        </div> */}
       </section>
 
       <Footer />
